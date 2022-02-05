@@ -1,0 +1,30 @@
+﻿
+@model MvcCv.Models.Entitiy.TblSosyalMedya
+@{
+    ViewBag.Title = "Duzenle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<br />
+<h4>  Sosyal Medya Hesap Düzenleme Sayfası</h4>
+<br />
+<form method="post">
+
+
+    @Html.Label("Ssosyal Medya Adı")
+    @Html.TextBoxFor(x => x.Ad, new { @class = "form-control" })
+    <br />
+    @Html.Label("Link")
+    @Html.TextBoxFor(x => x.Link, new { @class = "form-control" })
+    <br />
+    @Html.Label("İkon")
+    @Html.TextBoxFor(x => x.ikon, new { @class = "form-control" })
+
+
+    <br />
+    <button class="btn btn-success">Kaydet</button>
+
+</form>
+
+
